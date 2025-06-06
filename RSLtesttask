@@ -1,0 +1,190 @@
+<RetrofittedStudentLesson paperSize="A4" language="English" version="2.27.0">
+  <RSLIdeaSection title="Key features of quadratic functions" id="id-for-idea">
+    <RSLIdeaTheory>
+      <Text>
+        When a quadratic function is sketched on a Cartesian plane, it is called
+        a parabola.
+      </Text>
+      <Text>
+        The most simple quadratic function is <Latex expression="y=x^2" />. The
+        table shows the corresponding -values for values of between -4 and 4.
+      </Text>
+      <TabularData
+        rowTitles={['x', 'y']}
+        rowTitlesAs="latex"
+        rowData={[
+          ['-4', '-3', '-2', '-1', '0', '1', '2', '3', '4'],
+          ['16', '9', '4', '1', '0', '1', '4', '9', '16'],
+        ]}
+        rowDataAs="latex"
+      />
+      <Text>
+        Using the table, the graph of <Latex expression="y=x^2" /> can be
+        sketched on a Cartesian plane.
+      </Text>
+      <CartesianPlane
+        width={260}
+        height={260}
+        xAxis={{
+          min: -8,
+          max: 8,
+          scale: 1,
+          interval: 1,
+          intervalSubdivisions: 2,
+          unit: '',
+          numberFormat: 'improperFraction',
+          label: 'x',
+        }}
+        yAxis={{
+          min: -4,
+          max: 18,
+          scale: 1,
+          interval: 2,
+          intervalSubdivisions: 4,
+          unit: '',
+          numberFormat: 'decimal',
+          label: 'y',
+        }}
+      >
+        <FunctionPlot
+          f={(x) => x ** 2}
+          labelLatex="\qquad \qquad \qquad \qquad Turning point(0,0)"
+        />
+        <Point x={0} y={0} />
+        <Point x={-1} y={1} />
+        <Point x={-2} y={4} />
+        <Point x={-3} y={9} />
+        <Point x={-4} y={16} />
+        <Point x={1} y={1} />
+        <Point x={2} y={4} />
+        <Point x={3} y={9} />
+        <Point x={4} y={16} />
+      </CartesianPlane>
+      <Text>
+        The point is called the turning point of the graph. In this case,
+        turning point is also the <Latex expression="x" />
+        -intercept and the <Latex expression="y" />
+        -intercept of the graph.
+      </Text>
+      <Text>A summary of the features of the basic parabola:</Text>
+      <List type="bullet">
+        <ListItem>
+          {' '}
+          <Latex expression="y=-x^2" /> is a reflection of{' '}
+          <Latex expression="y=x^2" /> across the x-axis
+        </ListItem>
+        <ListItem>
+          {' '}
+          Graphs with a positive coefficient of <Latex expression="x" /> are
+          concave up
+        </ListItem>
+        <ListItem>
+          {' '}
+          Graphs with a positive coefficient of <Latex expression="x" /> are
+          concave down
+        </ListItem>
+      </List>
+      <Text>
+        The <Latex expression="x" />
+        -intercepts are where the parabola corsses the <Latex expression="x" />-
+        axis. This occurs when <Latex expression="y=0" />.
+      </Text>
+      <Text>
+        The <Latex expression="y" />
+        -intercepts are where the parabola corsses the <Latex expression="y" />-
+        axis. This occurs when <Latex expression="x=0" />.
+      </Text>
+      <Text>
+        Parabolas will always have exactly one <Latex expression="y" />
+        -intercept. However, they can have zero, one or two{' '}
+        <Latex expression="x" />
+        -intercepts (as seen in the diagram). The <Latex expression="x" />
+        -intercepts are also known as the roots or solutions to the function.
+      </Text>
+      <Text>Images</Text>
+      <Text>
+        Turning points can show the minimum or maximum values, and are also
+        referred to as the vertex.
+      </Text>
+      <Text>Image with sub</Text>
+      <Text>Image with sub</Text>
+      <Text>
+        Maximum and minimum values occur on a parabola's axis of symmetry. This
+        is the vertical line that evenly divides a parabola into two halves. A
+        quadratic in the general form <Latex expression="y=ax^2+bx+c" /> will
+        have the axis of symmetry at:
+      </Text>
+      <AlgebraicWorking useRowNumbering>
+        <AlgebraicWorkingRow>
+          <AlgebraicWorkingStatement
+            lhs="x"
+            relation="="
+            rhs="-b\\frac{2}{a}"
+          />
+        </AlgebraicWorkingRow>
+      </AlgebraicWorking>
+    </RSLIdeaTheory>
+
+    <RSLIdeaWorkedQuestions>
+      <RSLWorkedQuestion>
+        <RSLQuestionStatement>
+          <Text>Examine the graph and answer these questions:</Text>
+          <Text>iMAGES</Text>
+          <Text>
+            a. Identify the <Latex expression="x" />
+            -intercepts.
+          </Text>
+        </RSLQuestionStatement>
+        <RSLCreateAStrategy>
+          <Text>
+            Determine the points on which the graph crosses the{' '}
+            <Latex expression="x" />
+            -axis.
+          </Text>
+        </RSLCreateAStrategy>
+        <RSLApplyTheIdea>
+          <Text>
+            These points occur when <Latex expression="y=0" />.
+          </Text>
+          <Text>image</Text>
+          <Text>
+            So, the <Latex expression="x" />
+            -intercepts is at <Latex expression="(-6,0)" /> and{' '}
+            <Latex expression="(2,0)" />.
+          </Text>
+        </RSLApplyTheIdea>
+      </RSLWorkedQuestion>
+    </RSLIdeaWorkedQuestions>
+
+    <RSLIdeaSummary>
+      <Text>Summary of the idea</Text>
+    </RSLIdeaSummary>
+  </RSLIdeaSection>
+
+  <RSLIdeaSection title="Idea title" id="unique-id-for-idea">
+    <RSLIdeaTheory>
+      <Text>Introduce the idea</Text>
+    </RSLIdeaTheory>
+
+    <RSLIdeaWorkedQuestions>
+      <RSLWorkedQuestion>
+        <RSLQuestionStatement>
+          <Text>State the question</Text>
+        </RSLQuestionStatement>
+        <RSLCreateAStrategy>
+          <Text>Text</Text>
+        </RSLCreateAStrategy>
+        <RSLApplyTheIdea>
+          <Text>Text</Text>
+        </RSLApplyTheIdea>
+        <RSLReflectAndCheck>
+          <Text>Text</Text>
+        </RSLReflectAndCheck>
+      </RSLWorkedQuestion>
+    </RSLIdeaWorkedQuestions>
+
+    <RSLIdeaSummary>
+      <Text>Summary of the idea</Text>
+    </RSLIdeaSummary>
+  </RSLIdeaSection>
+</RetrofittedStudentLesson>;
