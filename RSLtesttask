@@ -898,62 +898,117 @@
             <Text>State the coordinates of the turning point.</Text>
           </RSLSubquestionStatement>
           <RSLCreateAStrategy>
-            <Text>Text</Text>
+            <Text>Use <Latex expression="x=-b/2a" /> to determine the <Latex expression="x" />-value of the turning point. Then find the <Latex expression="y" />-value of the turning point.</Text>
           </RSLCreateAStrategy>
           <RSLApplyTheIdea>
-            <Text>Text</Text>
+            <Text>From the general form <Latex expression="y=ax^2+bx+c" />, the values of <Latex expression="a,b" /> and <Latex expression="c" /> are <Latex expression="a=-5, b=-80, c=-195" />.</Text>
+            <AlgebraicWorking>
+              <AlgebraicWorkingRow>
+                <AlgebraicWorkingStatement
+                  lhs="x"
+                  relation="="
+                  rhs="-b\\{2}{a}"
+                />
+                <AlgebraicWorkingExplanation>
+                  Write the formula
+                </AlgebraicWorkingExplanation>
+              </AlgebraicWorkingRow>
+              <AlgebraicWorkingRow>
+                <AlgebraicWorkingStatement relation="=" rhs="-(-80)\\2(-5)" />
+                <AlgebraicWorkingExplanation>
+                  Substitute <Latex expression="a=-5" /> and <Latex expression="b=-80" />
+                </AlgebraicWorkingExplanation>
+              </AlgebraicWorkingRow>
+              <AlgebraicWorkingRow>
+                <AlgebraicWorkingStatement relation="=" rhs="-8" />
+                <AlgebraicWorkingExplanation>
+                 Evaluate
+                </AlgebraicWorkingExplanation>
+              </AlgebraicWorkingRow>
+              <AlgebraicWorkingRow>
+                <AlgebraicWorkingStatement lhs="y"relation="=" rhs="-5(-8)^2-80(-8)-195" />
+                <AlgebraicWorkingExplanation>
+                  Substitute <Latex expression="x=-8" />
+                </AlgebraicWorkingExplanation>
+              </AlgebraicWorkingRow>
+              <AlgebraicWorkingRow>
+                <AlgebraicWorkingStatement relation="=" rhs="-5(64)+640-195" />
+                <AlgebraicWorkingExplanation>
+                  Use order of operations
+                </AlgebraicWorkingExplanation>
+              </AlgebraicWorkingRow>
+                <AlgebraicWorkingRow>
+                <AlgebraicWorkingStatement relation="=" rhs="125" />
+                <AlgebraicWorkingExplanation>
+                  Evaluate
+                </AlgebraicWorkingExplanation>
+              </AlgebraicWorkingRow>
+            </AlgebraicWorking>
+            <Text>The turning point is at <Latex expression="(-8, 125)" />.</Text>
           </RSLApplyTheIdea>
-          <RSLReflectAndCheck>
-            <Text>Text</Text>
-          </RSLReflectAndCheck>
         </RSLWorkedQuestionPart>
         <RSLWorkedQuestionPart>
           <RSLSubquestionStatement>
-            <Text>State the subquestion</Text>
+            <Text>Sketch the graph of the equation on a Cartesian plane, labelling coordinates of the turning point and axis intercepts.</Text>
           </RSLSubquestionStatement>
           <RSLCreateAStrategy>
-            <Text>Text</Text>
+            <Text>Use a graphing calculator to graph <Latex expression="y=-5x^2-80x-195" />. An appropriate window must be used to check all key features: <Latex expression="x" />-intercepts, <Latex expression="y" />-intercepts and the turning point.</Text>
           </RSLCreateAStrategy>
           <RSLApplyTheIdea>
-            <Text>Text</Text>
+            <CartesianPlane
+        width={260}
+        height={260}
+        xAxis={{
+          min: -15,
+          max: 3,
+          scale: 1,
+          numberFormat: 'decimal',
+          label: 'x',
+        }}
+        yAxis={{
+          min: -200,
+          max: 125,
+          scale: 1,
+          numberFormat: 'decimal',
+          label: 'y',
+        }}
+      >
+        <FunctionPlot f={(x) => (x + 0.5) ** 2 + 0.35} />
+        <FunctionPlot
+          f={(x) => -0.1}
+          domain={[-2, -2]}
+          labelLatex="\qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \quad No   Solution"
+        />
+      </CartesianPlane>
           </RSLApplyTheIdea>
-          <RSLReflectAndCheck>
-            <Text>Text</Text>
-          </RSLReflectAndCheck>
         </RSLWorkedQuestionPart>
         <RSLWorkedQuestionPart>
           <RSLSubquestionStatement>
-            <Text>State the subquestion</Text>
+            <Text>State the values of <Latex expression="x" /> for which the graph is decreasing.</Text>
           </RSLSubquestionStatement>
           <RSLCreateAStrategy>
-            <Text>Text</Text>
+            <Text>Use the graph sketched in part (c). Reading the graph from left to right, identify the parts of the graph that are going downwards.</Text>
           </RSLCreateAStrategy>
           <RSLApplyTheIdea>
-            <Text>Text</Text>
+            <Text>Since the turning point is at <Latex expression="(-8, 125)" />, everything on the right side of the turning point is decreasing when <Latex expression="x > -8" />.</Text>
           </RSLApplyTheIdea>
-          <RSLReflectAndCheck>
-            <Text>Text</Text>
-          </RSLReflectAndCheck>
         </RSLWorkedQuestionPart>
         <RSLWorkedQuestionPart>
           <RSLSubquestionStatement>
-            <Text>State the subquestion</Text>
+            <Text>State the values of <Latex expression="x" /> for which the graph is increasing.</Text>
           </RSLSubquestionStatement>
           <RSLCreateAStrategy>
-            <Text>Text</Text>
+            <Text>Use the graph sketched in part (c). Reading the graph from left to right, identify the parts of the graph that are going upwards.</Text>
           </RSLCreateAStrategy>
           <RSLApplyTheIdea>
-            <Text>Text</Text>
+            <Text>Since the turning point is at <Latex expression="(-8, 125)" />, everything on the left side of the turning point is increasing when <Latex expression="x < -8" />.</Text>
           </RSLApplyTheIdea>
-          <RSLReflectAndCheck>
-            <Text>Text</Text>
-          </RSLReflectAndCheck>
         </RSLWorkedQuestionPart>
       </RSLWorkedQuestion>
     </RSLIdeaWorkedQuestions>
 
     <RSLIdeaSummary>
-      <Text>Summary of the idea</Text>
+      <Text>Utilising technology enables us to create graphical representations and identify key features of quadratic functions.</Text>
     </RSLIdeaSummary>
   </RSLIdeaSection>
 </RetrofittedStudentLesson>;
