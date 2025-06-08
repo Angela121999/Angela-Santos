@@ -257,7 +257,7 @@
           <AlgebraicWorkingStatement
             lhs="x"
             relation="="
-            rhs="-b\\dfrac{2}{a}"
+            rhs="\dfrac{-b}{2a}"
           />
         </AlgebraicWorkingRow>
       </AlgebraicWorking>
@@ -833,7 +833,7 @@
             the axis of symmetry is at{' '}
           </Text>
           <Text>
-            <Latex expression="x =-b\\ {2}{a}" />.
+            <Latex expression="x =\dfrac{-b}{2a}" />.
           </Text>
         </ListItem>
       </List>
@@ -907,14 +907,14 @@
                 <AlgebraicWorkingStatement
                   lhs="x"
                   relation="="
-                  rhs="-b\\{2}{a}"
+                  rhs="\dfrac{-b}{2a}"
                 />
                 <AlgebraicWorkingExplanation>
                   Write the formula
                 </AlgebraicWorkingExplanation>
               </AlgebraicWorkingRow>
               <AlgebraicWorkingRow>
-                <AlgebraicWorkingStatement relation="=" rhs="-(-80)\\2(-5)" />
+                <AlgebraicWorkingStatement relation="=" rhs="\dfrac{-(-80)}{2(-5)}" />
                 <AlgebraicWorkingExplanation>
                   Substitute <Latex expression="a=-5" /> and <Latex expression="b=-80" />
                 </AlgebraicWorkingExplanation>
