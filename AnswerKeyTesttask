@@ -1,206 +1,360 @@
 <AnswerKey paperSize="A4" language="English" version="2.27.0">
-<QuestionsGroup title="Simple Familiar">
- <Question label="1">
-  <Parts columns={2}>
-    <Part><Text>Up, minimum</Text></Part>
-    <Part><Text>Down, maximum</Text></Part>
-  </Parts>
-</Question>
-<Question label="2">
-  <Parts columns={2}>
-    <Part><Text>Concave down</Text></Part>
-    <Part><Text>Concave up</Text></Part>
-  </Parts>
-</Question>
-<Question label="3">
-  <Parts columns={2}>
-    <Part><Text>Concave up</Text></Part>
-    <Part><Text>Concave down</Text></Part>
-    <Part><Text>Concave down</Text></Part>
-  </Parts>
-</Question>
-<Question label="4" linkedExamples={["1"]}>
-  <Parts columns={4}>
-    <Part><Latex expression="x=0,4" /></Part>
-    <Part><Latex expression="y=0" /></Part>
-    <Part><Latex expression="4" /></Part>
-    <Part><Latex expression="x < 2" /></Part>
-  </Parts>
-</Question>
-<Question label="5" linkedExamples={["2"]}>
-  <Parts columns={4}>
-    <Part><Text>Concave up</Text></Part>
-    <Part><Latex expression="y=9" /></Part>
-    <Part><Latex expression="y=1" /></Part>
-    <Part><Latex expression="x=-2" /></Part>
-    <Part><Latex expression="x\in(-\infty,-2)" /></Part>
-  </Parts>
-</Question>
-<Question label="6">
-  <Parts columns={2}>
-    <Part><Latex expression="(-2,0)" /></Part>
-    <Part><Text>Vertex: <Latex expression="(-2,0)" /></Text></Part>
-    <Part><Parts columns={2}>
-      <Part label="i"><Text>False</Text></Part>
-      <Part label="ii"><Text>True</Text></Part>
-      <Part label="iii"><Text>True</Text></Part>
-      <Part label="iv"><Text>True</Text></Part>
-    </Parts></Part>
-  </Parts>
-</Question>
-<Question label="7">
-  <Parts columns={2}>
-    <Part><Latex expression="(-4,2)" /></Part>
-    <Part><Latex expression="2" /></Part>
-  </Parts>
-</Question>
-<Question label="8" linkedExamples={["3"]}>
-  <Parts columns={2}>
-    <Part><Parts columns={1}>
-      <Part label="i"><Latex expression="(8,7)" /></Part>
-      <Part label="ii"><Latex expression="(0,263)" /></Part>
-    </Parts></Part>
-    <Part><Parts columns={1}>
-      <Part label="i"><Latex expression="(-6,4)" /></Part>
-      <Part label="ii"><Latex expression="(0,-140)" /></Part>
-    </Parts></Part>
-  </Parts>
-</Question>
-<Question label="9">
-  <Parts columns={4}>
-    <Part><Latex expression="(0,-12)" /></Part>
-    <Part><Text>No</Text></Part>
-    <Part><Latex expression="x > 0" /></Part>
-  </Parts>
-</Question>
-<Question label="10">
-  <Parts columns={4}>
-    <Part><Latex expression="x = −3.1" /></Part>
-    <Part><Latex expression="−16.61" /></Part>
-  </Parts>
-</Question>
-<Question label="11">
-  <Parts columns={4}>
-    <Part><Latex expression="x = 2, 6" /></Part>
-    <Part><Latex expression="y = −24" /></Part>
-    <Part><Latex expression="x = 4" /></Part>
-    <Part><Latex expression="y = 8" /></Part>
-  </Parts>
-</Question>
-<Question label="12">
-  <Parts columns={2}>
-    <Part><Latex expression="x = 1.55" /></Part>
-    <Part><Latex expression="y = 2.95" /></Part>
-    <Part><Text>Yes</Text></Part>
-    <Part><Latex expression="x = 3.58,−0.47" /></Part>
-  </Parts>
-</Question>
-<Question label="13">
-  <Parts columns={4}>
-    <Part><Latex expression="x = 2.75" /></Part>
-    <Part><Latex expression="y = −9.10" /></Part>
-    <Part><Text>Yes</Text></Part>
-    <Part><Latex expression="x=-0.42, 5.91" /></Part>
-  </Parts>
-</Question>
-</QuestionsGroup>
-<QuestionsGroup title="Complex Familiar">
- <Question label="14"> No, because the entire parabola will be above the<Latex expression="x" />-axis. Also, there is no solution for the equation <Latex expression="x^2+6=0" />.
-</Question>
-<Question label="15">
-  <Parts columns={4}>
-    <Part><Text>No</Text></Part>
-    <Part><Text>Yes</Text></Part>
-    <Part><Text>No</Text></Part>
-    <Part><Text>Yes</Text></Part>
-  </Parts>
-</Question>
-<Question label="16" > Quadratic function <Latex expression="A" />
-</Question>
-<Question label="17" linkedExamples={["1"]}>
-  <Parts columns={2}>
-    <Part><Latex expression="2" /></Part>
-    <Part><Latex expression="1" /></Part>
-  </Parts>
-</Question>
-<Question label="18"> Concave up
-</Question>
-<Question label="19">
-  <Parts columns={1}>
-    <Part><Parts columns={2}>
-      <Part label="i"><Latex expression="x(2x+1)" /></Part>
-      <Part label="ii"><Latex expression="2x^2+x" /></Part>
-    </Parts></Part>
-    <Part><Parts columns={2}>
-      <Part label="i"><Latex expression="10" /> square units.</Part>
-      <Part label="ii"><Latex expression="55" /> square units.</Part>
-      <Part label="iii"><Latex expression="\dfrac{14}{9}" /> square units</Part>
-    </Parts></Part>
-    <Part><Text>The value of <Latex expression="x" /> must be positive as physical dimensions (such as length or width) are limited to being greater than zero. Therefore, since the shape has a length of <Latex expression="x" /> units, <Latex expression="x" /> must be greater than zero and must be positive.</Text></Part>
-  </Parts>
-</Question>
-</QuestionsGroup>
-<QuestionsGroup title="Complex Unfamiliar">
-<Question label="20">
-  <Parts columns={2}>
-    <Part><Latex expression="\dfrac{1}{3} < x < 5" /></Part>
-    <Part><Latex expression="\dfrac{490}{3}cm^3" /></Part>
-  </Parts>
-</Question>
-<Question label="21">
-  <Parts columns={2}>
-    <Part><Latex expression="0 < x < 5" /></Part>
-    <Part><Text>Maximum area is</Text> <Latex expression="122.5 cm^2" /> when <Latex expression="x=1.5" />.</Part>
-    <Part><CartesianPlane
-      width={260}
-      height={260} 
-      xAxis={{
-        min: 0,
-        max: 7,
-        scale: 1,
-        interval: 1,
-        intervalSubdivisions: 1,
-        unit: "",
-        numberFormat: "decimal",
-        label: "x",
-      }}  
-      yAxis={{
-        min: 0,
-        max: 130,
-        scale: 1,
-        interval: 10,
-        intervalSubdivisions: 1,
-        unit: "",
-        numberFormat: "decimal",
-        label: "y",
-      }}
-    >
-      <FunctionPlot f={(x) => 30*x+100-(3.15*x)**2} />
-        <FunctionPlot
-          f={(x) => 5}
-          domain={[-9, -9]}
-          labelLatex="\qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad (5,0)"
-        />
-        <FunctionPlot
-          f={(x) => 100}
-          domain={[-11, -11]}
-          labelLatex="\qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad (0,100)"
-        />
-        <FunctionPlot
-          f={(x) => 123}
-          domain={[-11, -11]}
-          labelLatex="\qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad (1.5,122.5)"
-        />
-        <Vector p1={[1, -2.5]} p2={[0, 0]} color="pickledBluewood" />
-        <Point x={0} y={100} color="pickledBluewood" />
-        <Point x={1.5} y={122.5} color="pickledBluewood" />
-        <Point x={5} y={0} color="pickledBluewood"/>
-    </CartesianPlane></Part>
-  </Parts>
-</Question>
-<Question label="22"> <Latex expression="y=-\dfrac{1}{4}(x-3)^2+6, y=\dfrac{1}{5}(x+6)^2-3" />
-</Question>
-<Question label="23"> The company needs to sell 45 units for a maximum profit of <Latex expression="$862 500" />.
-</Question>
-</QuestionsGroup>
-</AnswerKey>
+  <QuestionsGroup title="Simple Familiar">
+    <Question label="1">
+      <Parts columns={2}>
+        <Part>
+          <Text>Up, minimum</Text>
+        </Part>
+        <Part>
+          <Text>Down, maximum</Text>
+        </Part>
+      </Parts>
+    </Question>
+    <Question label="2">
+      <Parts columns={2}>
+        <Part>
+          <Text>Concave down</Text>
+        </Part>
+        <Part>
+          <Text>Concave up</Text>
+        </Part>
+      </Parts>
+    </Question>
+    <Question label="3">
+      <Parts columns={2}>
+        <Part>
+          <Text>Concave up</Text>
+        </Part>
+        <Part>
+          <Text>Concave down</Text>
+        </Part>
+        <Part>
+          <Text>Concave down</Text>
+        </Part>
+      </Parts>
+    </Question>
+    <Question label="4" linkedExamples={['1']}>
+      <Parts columns={4}>
+        <Part>
+          <Latex expression="x=0,4" />
+        </Part>
+        <Part>
+          <Latex expression="y=0" />
+        </Part>
+        <Part>
+          <Latex expression="4" />
+        </Part>
+        <Part>
+          <Latex expression="x < 2" />
+        </Part>
+      </Parts>
+    </Question>
+    <Question label="5" linkedExamples={['2']}>
+      <Parts columns={4}>
+        <Part>
+          <Text>Concave up</Text>
+        </Part>
+        <Part>
+          <Latex expression="y=9" />
+        </Part>
+        <Part>
+          <Latex expression="y=1" />
+        </Part>
+        <Part>
+          <Latex expression="x=-2" />
+        </Part>
+        <Part>
+          <Latex expression="x\in(-\infty,-2)" />
+        </Part>
+      </Parts>
+    </Question>
+    <Question label="6">
+      <Parts columns={2}>
+        <Part>
+          <Latex expression="(-2,0)" />
+        </Part>
+        <Part>
+          <Text>
+            Vertex: <Latex expression="(-2,0)" />
+          </Text>
+        </Part>
+        <Part>
+          <Parts columns={2}>
+            <Part label="i">
+              <Text>False</Text>
+            </Part>
+            <Part label="ii">
+              <Text>True</Text>
+            </Part>
+            <Part label="iii">
+              <Text>True</Text>
+            </Part>
+            <Part label="iv">
+              <Text>True</Text>
+            </Part>
+          </Parts>
+        </Part>
+      </Parts>
+    </Question>
+    <Question label="7">
+      <Parts columns={2}>
+        <Part>
+          <Latex expression="(-4,2)" />
+        </Part>
+        <Part>
+          <Latex expression="2" />
+        </Part>
+      </Parts>
+    </Question>
+    <Question label="8" linkedExamples={['3']}>
+      <Parts columns={2}>
+        <Part>
+          <Parts columns={1}>
+            <Part label="i">
+              <Latex expression="(8,7)" />
+            </Part>
+            <Part label="ii">
+              <Latex expression="(0,263)" />
+            </Part>
+          </Parts>
+        </Part>
+        <Part>
+          <Parts columns={1}>
+            <Part label="i">
+              <Latex expression="(-6,4)" />
+            </Part>
+            <Part label="ii">
+              <Latex expression="(0,-140)" />
+            </Part>
+          </Parts>
+        </Part>
+      </Parts>
+    </Question>
+    <Question label="9">
+      <Parts columns={4}>
+        <Part>
+          <Latex expression="(0,-12)" />
+        </Part>
+        <Part>
+          <Text>No</Text>
+        </Part>
+        <Part>
+          <Latex expression="x > 0" />
+        </Part>
+      </Parts>
+    </Question>
+    <Question label="10">
+      <Parts columns={4}>
+        <Part>
+          <Latex expression="x = −3.1" />
+        </Part>
+        <Part>
+          <Latex expression="−16.61" />
+        </Part>
+      </Parts>
+    </Question>
+    <Question label="11">
+      <Parts columns={4}>
+        <Part>
+          <Latex expression="x = 2, 6" />
+        </Part>
+        <Part>
+          <Latex expression="y = −24" />
+        </Part>
+        <Part>
+          <Latex expression="x = 4" />
+        </Part>
+        <Part>
+          <Latex expression="y = 8" />
+        </Part>
+      </Parts>
+    </Question>
+    <Question label="12">
+      <Parts columns={2}>
+        <Part>
+          <Latex expression="x = 1.55" />
+        </Part>
+        <Part>
+          <Latex expression="y = 2.95" />
+        </Part>
+        <Part>
+          <Text>Yes</Text>
+        </Part>
+        <Part>
+          <Latex expression="x = 3.58,−0.47" />
+        </Part>
+      </Parts>
+    </Question>
+    <Question label="13">
+      <Parts columns={4}>
+        <Part>
+          <Latex expression="x = 2.75" />
+        </Part>
+        <Part>
+          <Latex expression="y = −9.10" />
+        </Part>
+        <Part>
+          <Text>Yes</Text>
+        </Part>
+        <Part>
+          <Latex expression="x=-0.42, 5.91" />
+        </Part>
+      </Parts>
+    </Question>
+  </QuestionsGroup>
+  <QuestionsGroup title="Complex Familiar">
+    <Question label="14">
+      {' '}
+      No, because the entire parabola will be above the
+      <Latex expression="x" />
+      -axis. Also, there is no solution for the equation{' '}
+      <Latex expression="x^2+6=0" />.
+    </Question>
+    <Question label="15">
+      <Parts columns={4}>
+        <Part>
+          <Text>No</Text>
+        </Part>
+        <Part>
+          <Text>Yes</Text>
+        </Part>
+        <Part>
+          <Text>No</Text>
+        </Part>
+        <Part>
+          <Text>Yes</Text>
+        </Part>
+      </Parts>
+    </Question>
+    <Question label="16">
+      {' '}
+      Quadratic function <Latex expression="A" />
+    </Question>
+    <Question label="17" linkedExamples={['1']}>
+      <Parts columns={2}>
+        <Part>
+          <Latex expression="2" />
+        </Part>
+        <Part>
+          <Latex expression="1" />
+        </Part>
+      </Parts>
+    </Question>
+    <Question label="18"> Concave up</Question>
+    <Question label="19">
+      <Parts columns={1}>
+        <Part>
+          <Parts columns={2}>
+            <Part label="i">
+              <Latex expression="x(2x+1)" />
+            </Part>
+            <Part label="ii">
+              <Latex expression="2x^2+x" />
+            </Part>
+          </Parts>
+        </Part>
+        <Part>
+          <Parts columns={2}>
+            <Part label="i">
+              <Latex expression="10" /> square units.
+            </Part>
+            <Part label="ii">
+              <Latex expression="55" /> square units.
+            </Part>
+            <Part label="iii">
+              <Latex expression="\dfrac{14}{9}" /> square units
+            </Part>
+          </Parts>
+        </Part>
+        <Part>
+          <Text>
+            The value of <Latex expression="x" /> must be positive as physical
+            dimensions (such as length or width) are limited to being greater
+            than zero. Therefore, since the shape has a length of{' '}
+            <Latex expression="x" /> units, <Latex expression="x" /> must be
+            greater than zero and must be positive.
+          </Text>
+        </Part>
+      </Parts>
+    </Question>
+  </QuestionsGroup>
+  <QuestionsGroup title="Complex Unfamiliar">
+    <Question label="20">
+      <Parts columns={2}>
+        <Part>
+          <Latex expression="\dfrac{1}{3} < x < 5" />
+        </Part>
+        <Part>
+          <Latex expression="\dfrac{490}{3}cm^3" />
+        </Part>
+      </Parts>
+    </Question>
+    <Question label="21">
+      <Parts columns={2}>
+        <Part>
+          <Latex expression="0 < x < 5" />
+        </Part>
+        <Part>
+          <Text>Maximum area is</Text> <Latex expression="122.5 cm^2" /> when{' '}
+          <Latex expression="x=1.5" />.
+        </Part>
+        <Part>
+          <CartesianPlane
+            width={260}
+            height={260}
+            xAxis={{
+              min: 0,
+              max: 7,
+              scale: 1,
+              interval: 1,
+              intervalSubdivisions: 1,
+              unit: '',
+              numberFormat: 'decimal',
+              label: 'x',
+            }}
+            yAxis={{
+              min: 0,
+              max: 130,
+              scale: 1,
+              interval: 10,
+              intervalSubdivisions: 1,
+              unit: '',
+              numberFormat: 'decimal',
+              label: 'y',
+            }}
+          >
+            <FunctionPlot f={(x) => 30 * x + 100 - (3.15 * x) ** 2} />
+            <FunctionPlot
+              f={(x) => 5}
+              domain={[-9, -9]}
+              labelLatex="\qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad (5,0)"
+            />
+            <FunctionPlot
+              f={(x) => 100}
+              domain={[-11, -11]}
+              labelLatex="\qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad (0,100)"
+            />
+            <FunctionPlot
+              f={(x) => 123}
+              domain={[-11, -11]}
+              labelLatex="\qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad (1.5,122.5)"
+            />
+            <Vector p1={[1, -2.5]} p2={[0, 0]} color="pickledBluewood" />
+            <Point x={0} y={100} color="pickledBluewood" />
+            <Point x={1.5} y={122.5} color="pickledBluewood" />
+            <Point x={5} y={0} color="pickledBluewood" />
+          </CartesianPlane>
+        </Part>
+      </Parts>
+    </Question>
+    <Question label="22">
+      {' '}
+      <Latex expression="y=-\dfrac{1}{4}(x-3)^2+6, y=\dfrac{1}{5}(x+6)^2-3" />
+    </Question>
+    <Question label="23">
+      {' '}
+      The company needs to sell 45 units for a maximum profit of{' '}
+      <Latex expression="$862 500" />.
+    </Question>
+  </QuestionsGroup>
+</AnswerKey>;
