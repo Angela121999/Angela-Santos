@@ -23,7 +23,7 @@
         sketched on a Cartesian plane.
       </Text>
       <CartesianPlane
-        width={260}
+        width={596}
         height={260}
         xAxis={{
           min: -8,
@@ -46,11 +46,14 @@
           label: 'y',
         }}
       >
+        <FunctionPlot f={(x) => x ** 2} />
         <FunctionPlot
-          f={(x) => x ** 2}
-          labelLatex="\qquad \qquad \qquad \qquad Turning point(0,0)"
+          f={(x) => -3}
+          domain={[-8.5, -8.5]}
+          labelLatex="\qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad Turning point(0,0)"
         />
-        <Point x={0} y={0} />
+        <Vector p1={[1, -2.5]} p2={[0, 0]} color="pickledBluewood" />
+        <Point x={0} y={0} color="mountainMeadow" />
         <Point x={-1} y={1} />
         <Point x={-2} y={4} />
         <Point x={-3} y={9} />
@@ -94,6 +97,47 @@
         -intercepts are where the parabola corsses the <Latex expression="y" />-
         axis. This occurs when <Latex expression="x=0" />.
       </Text>
+      <CartesianPlane
+        width={260}
+        height={260}
+        xAxis={{
+          min: -20,
+          max: 20,
+          scale: 1,
+          interval: 5,
+          intervalSubdivisions: 1,
+          unit: '',
+          numberFormat: 'improperFraction',
+          label: 'x',
+        }}
+        yAxis={{
+          min: -20,
+          max: 20,
+          scale: 1,
+          interval: 5,
+          intervalSubdivisions: 1,
+          unit: '',
+          numberFormat: 'decimal',
+          label: 'y',
+        }}
+      >
+        <FunctionPlot f={(x) => (x - 3) ** 2 - 18} />
+        <FunctionPlot
+          f={(x) => 10}
+          domain={[-22, -22]}
+          labelLatex="x-intercepts"
+        />
+        <Vector p1={[-5, 10]} p2={[-1.3, 0.6]} color="pickledBluewood" />
+        <Vector p1={[-5, 10]} p2={[7.3, 0.6]} color="pickledBluewood" />
+        <Point x={-1.3} y={0} color="lochmara" />
+        <Point x={0} y={-7} color="lochmara" />
+        <Point x={7.3} y={0} color="lochmara" />
+        <FunctionPlot
+          f={(x) => -7}
+          domain={[-28, -28]}
+          labelLatex="\qquad \qquad y-intercept"
+        />
+      </CartesianPlane>
       <Text>
         Parabolas will always have exactly one <Latex expression="y" />
         -intercept. However, they can have zero, one or two{' '}
@@ -101,13 +145,107 @@
         -intercepts (as seen in the diagram). The <Latex expression="x" />
         -intercepts are also known as the roots or solutions to the function.
       </Text>
-      <Text>Images</Text>
+      <CartesianPlane
+        width={260}
+        height={260}
+        xAxis={{
+          min: -0.5,
+          max: 0.5,
+          scale: 1,
+          interval: 1,
+          intervalSubdivisions: 1,
+          unit: '',
+          numberFormat: 'decimal',
+          label: 'x',
+        }}
+        yAxis={{
+          min: -0.5,
+          max: 1,
+          scale: 1,
+          interval: 1,
+          intervalSubdivisions: 1,
+          unit: '',
+          numberFormat: 'decimal',
+          label: 'y',
+        }}
+      >
+        <FunctionPlot f={(x) => (x + 0.5) ** 2 + 0.35} />
+        <FunctionPlot
+          f={(x) => -0.1}
+          domain={[-2, -2]}
+          labelLatex="\qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \quad No   Solution"
+        />
+      </CartesianPlane>
       <Text>
         Turning points can show the minimum or maximum values, and are also
         referred to as the vertex.
       </Text>
-      <Text>Image with sub</Text>
-      <Text>Image with sub</Text>
+      <Text>Parabolas that are concave up have a minimum value</Text>
+      <CartesianPlane
+        width={260}
+        height={260}
+        xAxis={{
+          min: -20,
+          max: 20,
+          scale: 1,
+          interval: 5,
+          intervalSubdivisions: 1,
+          unit: '',
+          numberFormat: 'improperFraction',
+          label: 'x',
+        }}
+        yAxis={{
+          min: -20,
+          max: 20,
+          scale: 1,
+          interval: 5,
+          intervalSubdivisions: 1,
+          unit: '',
+          numberFormat: 'decimal',
+          label: 'y',
+        }}
+      >
+        <FunctionPlot f={(x) => (x - 10) ** 2 - 15} />
+        <Point x={10} y={-15} color="lochmara" />
+        <FunctionPlot
+          f={(x) => -17}
+          domain={[-28, -28]}
+          labelLatex="\qquad \qquad \qquad \qquad \qquad \qquad Minimum Value"
+        />
+      </CartesianPlane>
+      <Text>Parabolas that are concave up have a maximum value</Text>
+      <CartesianPlane
+        width={260}
+        height={260}
+        xAxis={{
+          min: -20,
+          max: 20,
+          scale: 1,
+          interval: 5,
+          intervalSubdivisions: 1,
+          unit: '',
+          numberFormat: 'improperFraction',
+          label: 'x',
+        }}
+        yAxis={{
+          min: -20,
+          max: 20,
+          scale: 1,
+          interval: 5,
+          intervalSubdivisions: 1,
+          unit: '',
+          numberFormat: 'decimal',
+          label: 'y',
+        }}
+      >
+        <FunctionPlot f={(x) => 15 - (x + 10) ** 2} />
+        <Point x={-10} y={15} color="lochmara" />
+        <FunctionPlot
+          f={(x) => 17}
+          domain={[-28, -28]}
+          labelLatex="\qquad Maximum Value"
+        />
+      </CartesianPlane>
       <Text>
         Maximum and minimum values occur on a parabola's axis of symmetry. This
         is the vertical line that evenly divides a parabola into two halves. A
@@ -119,7 +257,7 @@
           <AlgebraicWorkingStatement
             lhs="x"
             relation="="
-            rhs="-b\\frac{2}{a}"
+            rhs="-b\\dfrac{2}{a}"
           />
         </AlgebraicWorkingRow>
       </AlgebraicWorking>
@@ -129,57 +267,688 @@
       <RSLWorkedQuestion>
         <RSLQuestionStatement>
           <Text>Examine the graph and answer these questions:</Text>
-          <Text>iMAGES</Text>
-          <Text>
-            a. Identify the <Latex expression="x" />
-            -intercepts.
-          </Text>
+          <CartesianPlane
+            width={260}
+            height={260}
+            xAxis={{
+              min: -10,
+              max: 8,
+              scale: 1,
+              interval: 2,
+              intervalSubdivisions: 1,
+              unit: '',
+              numberFormat: 'improperFraction',
+              label: 'x',
+            }}
+            yAxis={{
+              min: -25,
+              max: 10,
+              scale: 1,
+              interval: 5,
+              intervalSubdivisions: 1,
+              unit: '',
+              numberFormat: 'decimal',
+              label: 'y',
+            }}
+          >
+            <FunctionPlot f={(x) => (x + 2) ** 2 - 16} />
+          </CartesianPlane>
         </RSLQuestionStatement>
-        <RSLCreateAStrategy>
-          <Text>
-            Determine the points on which the graph crosses the{' '}
-            <Latex expression="x" />
-            -axis.
-          </Text>
-        </RSLCreateAStrategy>
-        <RSLApplyTheIdea>
-          <Text>
-            These points occur when <Latex expression="y=0" />.
-          </Text>
-          <Text>image</Text>
-          <Text>
-            So, the <Latex expression="x" />
-            -intercepts is at <Latex expression="(-6,0)" /> and{' '}
-            <Latex expression="(2,0)" />.
-          </Text>
-        </RSLApplyTheIdea>
+        <RSLWorkedQuestionPart>
+          <RSLSubquestionStatement>
+            <Text>
+              Identify <Latex expression="x" />
+              -intercepts.
+            </Text>
+          </RSLSubquestionStatement>
+          <RSLCreateAStrategy>
+            <Text>
+              Determine the points on which the graph crosses the{' '}
+              <Latex expression="x" />
+              -axis.
+            </Text>
+          </RSLCreateAStrategy>
+          <RSLApplyTheIdea>
+            <Text>
+              These points occur when <Latex expression="y=0" />.
+            </Text>
+            <CartesianPlane
+              width={260}
+              height={260}
+              xAxis={{
+                min: -10,
+                max: 8,
+                scale: 1,
+                interval: 2,
+                intervalSubdivisions: 1,
+                unit: '',
+                numberFormat: 'improperFraction',
+                label: 'x',
+              }}
+              yAxis={{
+                min: -25,
+                max: 10,
+                scale: 1,
+                interval: 5,
+                intervalSubdivisions: 1,
+                unit: '',
+                numberFormat: 'decimal',
+                label: 'y',
+              }}
+            >
+              <FunctionPlot f={(x) => (x + 2) ** 2 - 16} />
+              <Point x={2} y={0} color="pickledBluewood" />
+              <Point x={-6} y={0} color="pickledBluewood" />
+              <FunctionPlot
+                f={(x) => 1.5}
+                domain={[-24, -24]}
+                labelLatex="\qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad (-6,0)"
+              />
+              <FunctionPlot
+                f={(x) => 1.5}
+                domain={[-22.5, -22.5]}
+                labelLatex="\qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad (2,0)"
+              />
+            </CartesianPlane>
+            <Text>
+              So, the <Latex expression="x" />
+              -intercepts are at <Latex expression="(6,0)" />
+              and <Latex expression="(2,0)" />.
+            </Text>
+          </RSLApplyTheIdea>
+        </RSLWorkedQuestionPart>
+        <RSLWorkedQuestionPart>
+          <RSLSubquestionStatement>
+            <Text>
+              Identify the <Latex expression="y" />
+              -intercept.
+            </Text>
+          </RSLSubquestionStatement>
+          <RSLCreateAStrategy>
+            <Text>
+              Determine the point on which the graph crosses the{' '}
+              <Latex expression="y" />
+              -axis.
+            </Text>
+          </RSLCreateAStrategy>
+          <RSLApplyTheIdea>
+            <Text>
+              This point ocurs when <Latex expression="x=0" />
+            </Text>
+            <CartesianPlane
+              width={260}
+              height={260}
+              xAxis={{
+                min: -10,
+                max: 8,
+                scale: 1,
+                interval: 2,
+                intervalSubdivisions: 1,
+                unit: '',
+                numberFormat: 'improperFraction',
+                label: 'x',
+              }}
+              yAxis={{
+                min: -25,
+                max: 10,
+                scale: 1,
+                interval: 5,
+                intervalSubdivisions: 1,
+                unit: '',
+                numberFormat: 'decimal',
+                label: 'y',
+              }}
+            >
+              <FunctionPlot f={(x) => (x + 2) ** 2 - 16} />
+              <Point x={0} y={-12} color="pickledBluewood" />
+              <FunctionPlot
+                f={(x) => -12}
+                domain={[-24, -24]}
+                labelLatex="\qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad (0,-12)"
+              />
+            </CartesianPlane>
+            <Text>
+              The <Latex expression="y" />
+              -inercept is at <Latex expression="(0,-12)" />
+            </Text>
+          </RSLApplyTheIdea>
+        </RSLWorkedQuestionPart>
+        <RSLWorkedQuestionPart>
+          <RSLSubquestionStatement>
+            <Text>What is the minimum value of the graph?</Text>
+          </RSLSubquestionStatement>
+          <RSLCreateAStrategy>
+            <Text>
+              Use the fact that the minimum value of this graph occurs at its
+              lowest point or can be found at the vertex of the parabola.
+            </Text>
+          </RSLCreateAStrategy>
+          <RSLApplyTheIdea>
+            <Text>
+              Based on the given graph, this point occurs when{' '}
+              <Latex expression="x=-2" />.
+            </Text>
+            <CartesianPlane
+              width={260}
+              height={260}
+              xAxis={{
+                min: -10,
+                max: 8,
+                scale: 1,
+                interval: 2,
+                intervalSubdivisions: 1,
+                unit: '',
+                numberFormat: 'improperFraction',
+                label: 'x',
+              }}
+              yAxis={{
+                min: -25,
+                max: 10,
+                scale: 1,
+                interval: 5,
+                intervalSubdivisions: 1,
+                unit: '',
+                numberFormat: 'decimal',
+                label: 'y',
+              }}
+            >
+              <FunctionPlot f={(x) => (x + 2) ** 2 - 16} />
+              <Point x={-2} y={-16} color="pickledBluewood" />
+              <FunctionPlot
+                f={(x) => -18}
+                domain={[-24, -24]}
+                labelLatex="\qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad (-2,–16)"
+              />
+            </CartesianPlane>
+            <Text>
+              So, the minimum value is at <Latex expression="y=-16" />.
+            </Text>
+          </RSLApplyTheIdea>
+        </RSLWorkedQuestionPart>
+        <RSLWorkedQuestionPart>
+          <RSLSubquestionStatement>
+            <Text>
+              For what values of does the graph have a positive gradient?
+            </Text>
+          </RSLSubquestionStatement>
+          <RSLCreateAStrategy>
+            <Text>
+              Consider how the <Latex expression="y" /> values change on this
+              concave down parabola.
+            </Text>
+          </RSLCreateAStrategy>
+          <RSLApplyTheIdea>
+            <Text>
+              Based on the graph, the axis of symmetry for this parabola is at{' '}
+              <Latex expression="x=-2" />. To the left of the axis of symmetry,
+              the parabola is increasing (positive gradient). To the right of
+              the axis of symmetry, it is decreasing (negative gradient).
+            </Text>
+            <CartesianPlane
+              width={260}
+              height={260}
+              xAxis={{
+                min: -10,
+                max: 8,
+                scale: 1,
+                interval: 2,
+                intervalSubdivisions: 1,
+                unit: '',
+                numberFormat: 'improperFraction',
+                label: 'x',
+              }}
+              yAxis={{
+                min: -25,
+                max: 10,
+                scale: 1,
+                interval: 5,
+                intervalSubdivisions: 1,
+                unit: '',
+                numberFormat: 'decimal',
+                label: 'y',
+              }}
+            >
+              <FunctionPlot f={(x) => (x + 2) ** 2 - 16} />
+              <FunctionPlot
+                f={(x) => -12}
+                domain={[-24, -24]}
+                labelLatex="\qquad \qquad \qquad \qquad \qquad \qquad \qquad Increasing"
+              />
+              <Line p1={[-2, 10]} p2={[-2, -25]} color="lochmara" dashed />
+              <Vector p1={[-6, -15]} p2={[-8, -3]} color="pickledBluewood" />
+            </CartesianPlane>
+            <Text>
+              So, the graph has a positive gradient for all values of{' '}
+              <Latex expression="x" /> greater than <Latex expression="-2" />
+            </Text>
+          </RSLApplyTheIdea>
+        </RSLWorkedQuestionPart>
+      </RSLWorkedQuestion>
+      <RSLWorkedQuestion>
+        <RSLQuestionStatement>
+          <Text>Examine the graph and answer these questions:</Text>
+          <CartesianPlane
+            width={260}
+            height={260}
+            xAxis={{
+              min: -12,
+              max: 8,
+              scale: 1,
+              interval: 2,
+              intervalSubdivisions: 1,
+              unit: '',
+              numberFormat: 'improperFraction',
+              label: 'x',
+            }}
+            yAxis={{
+              min: -35,
+              max: 10,
+              scale: 1,
+              interval: 5,
+              intervalSubdivisions: 1,
+              unit: '',
+              numberFormat: 'decimal',
+              label: 'y',
+            }}
+          >
+            <FunctionPlot f={(x) => 0.01 - (x + 5) ** 2} />
+          </CartesianPlane>
+        </RSLQuestionStatement>
+        <RSLWorkedQuestionPart>
+          <RSLSubquestionStatement>
+            <Text>
+              Identify <Latex expression="x" />
+              -intercepts.
+            </Text>
+          </RSLSubquestionStatement>
+          <RSLCreateAStrategy>
+            <Text>
+              Determine the point(s) on which the graph crosses the{' '}
+              <Latex expression="x" />
+              -axis.
+            </Text>
+          </RSLCreateAStrategy>
+          <RSLApplyTheIdea>
+            <Text>
+              The <Latex expression="x" />
+              -intercept(s) occur when <Latex expression="y=0" />.
+            </Text>
+            <CartesianPlane
+              width={260}
+              height={260}
+              xAxis={{
+                min: -12,
+                max: 8,
+                scale: 1,
+                interval: 2,
+                intervalSubdivisions: 1,
+                unit: '',
+                numberFormat: 'improperFraction',
+                label: 'x',
+              }}
+              yAxis={{
+                min: -35,
+                max: 10,
+                scale: 1,
+                interval: 5,
+                intervalSubdivisions: 1,
+                unit: '',
+                numberFormat: 'decimal',
+                label: 'y',
+              }}
+            >
+              <FunctionPlot f={(x) => 0.001 - (x + 5) ** 2} />
+              <Point x={-5} y={0} color="pickledBluewood" />
+              <FunctionPlot
+                f={(x) => 2}
+                domain={[-25, -25]}
+                labelLatex="\qquad \qquad \qquad \qquad \qquad \qquad \qquad (-5,0)"
+              />
+            </CartesianPlane>
+            <Text>
+              There is one <Latex expression="x" />
+              -intercept at <Latex expression="(-5,0)" />.
+            </Text>
+          </RSLApplyTheIdea>
+          <RSLReflectAndCheck>
+            <Text>
+              We also call this the root of the quadratic. In case, because
+              there is only one root, it's called a double root.
+            </Text>
+          </RSLReflectAndCheck>
+        </RSLWorkedQuestionPart>
+        <RSLWorkedQuestionPart>
+          <RSLSubquestionStatement>
+            <Text>
+              Identify the <Latex expression="y" />
+              -intercept.
+            </Text>
+          </RSLSubquestionStatement>
+          <RSLCreateAStrategy>
+            <Text>
+              Determine the point on which the graph crosses the{' '}
+              <Latex expression="y" />
+              -axis.
+            </Text>
+          </RSLCreateAStrategy>
+          <RSLApplyTheIdea>
+            <Text>
+              This point ocurs when <Latex expression="x=0" />
+            </Text>
+            <CartesianPlane
+              width={260}
+              height={260}
+              xAxis={{
+                min: -12,
+                max: 8,
+                scale: 1,
+                interval: 2,
+                intervalSubdivisions: 1,
+                unit: '',
+                numberFormat: 'improperFraction',
+                label: 'x',
+              }}
+              yAxis={{
+                min: -35,
+                max: 10,
+                scale: 1,
+                interval: 5,
+                intervalSubdivisions: 1,
+                unit: '',
+                numberFormat: 'decimal',
+                label: 'y',
+              }}
+            >
+              <FunctionPlot f={(x) => 0.001 - (x + 5) ** 2} />
+              <Point x={0} y={-25} color="pickledBluewood" />
+              <FunctionPlot
+                f={(x) => -25}
+                domain={[-25, -25]}
+                labelLatex="\qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad (0,-25)"
+              />
+            </CartesianPlane>
+            <Text>
+              The <Latex expression="y" />
+              -inercept is at <Latex expression="(0,-25)" />
+            </Text>
+          </RSLApplyTheIdea>
+        </RSLWorkedQuestionPart>
+        <RSLWorkedQuestionPart>
+          <RSLSubquestionStatement>
+            <Text>What is the maximum value of the graph?</Text>
+          </RSLSubquestionStatement>
+          <RSLCreateAStrategy>
+            <Text>
+              Use the fact that the minimum value of this graph occurs at its
+              lowest point or can be found at the vertex of the parabola.
+            </Text>
+          </RSLCreateAStrategy>
+          <RSLApplyTheIdea>
+            <Text>
+              Based on the given graph, this point occurs when{' '}
+              <Latex expression="x=-5" />.
+            </Text>
+            <CartesianPlane
+              width={260}
+              height={260}
+              xAxis={{
+                min: -10,
+                max: 8,
+                scale: 1,
+                interval: 2,
+                intervalSubdivisions: 1,
+                unit: '',
+                numberFormat: 'improperFraction',
+                label: 'x',
+              }}
+              yAxis={{
+                min: -25,
+                max: 10,
+                scale: 1,
+                interval: 5,
+                intervalSubdivisions: 1,
+                unit: '',
+                numberFormat: 'decimal',
+                label: 'y',
+              }}
+            >
+              <FunctionPlot f={(x) => 0.001 - (x + 5) ** 2} />
+              <Point x={-5} y={0} color="pickledBluewood" />
+              <FunctionPlot
+                f={(x) => 1.5}
+                domain={[-19, -19]}
+                labelLatex="\qquad \qquad \qquad \qquad \qquad (-5,0)"
+              />
+            </CartesianPlane>
+            <Text>
+              So, the maximum value is at <Latex expression="y=0" />.
+            </Text>
+          </RSLApplyTheIdea>
+        </RSLWorkedQuestionPart>
+        <RSLWorkedQuestionPart>
+          <RSLSubquestionStatement>
+            <Text>
+              For what values of <Latex expression="x" /> is the graph
+              increasing?
+            </Text>
+          </RSLSubquestionStatement>
+          <RSLCreateAStrategy>
+            <Text>
+              Consider how the <Latex expression="y" /> values change on this
+              concave down parabola.
+            </Text>
+          </RSLCreateAStrategy>
+          <RSLApplyTheIdea>
+            <Text>
+              Based on the graph, the axis of symmetry for this parabola is at{' '}
+              <Latex expression="x=-5" />. To the left of the axis of symmetry,
+              the parabola is increasing (positive gradient). To the right of
+              the axis of symmetry, it is decreasing (negative gradient).
+            </Text>
+            <CartesianPlane
+              width={260}
+              height={260}
+              xAxis={{
+                min: -12,
+                max: 8,
+                scale: 1,
+                interval: 2,
+                intervalSubdivisions: 1,
+                unit: '',
+                numberFormat: 'improperFraction',
+                label: 'x',
+              }}
+              yAxis={{
+                min: -35,
+                max: 10,
+                scale: 1,
+                interval: 5,
+                intervalSubdivisions: 1,
+                unit: '',
+                numberFormat: 'decimal',
+                label: 'y',
+              }}
+            >
+              <FunctionPlot f={(x) => 0.001 - (x + 5) ** 2} />
+              <FunctionPlot
+                f={(x) => -17}
+                domain={[-23, -23]}
+                labelLatex="\qquad \qquad \qquad \qquad Increasing"
+              />
+              <Line p1={[-5, 5]} p2={[-5, -35]} color="lochmara" dashed />
+              <Vector p1={[-10, -15]} p2={[-8, -3]} color="pickledBluewood" />
+            </CartesianPlane>
+            <Text>
+              So, the graph has a positive gradient for all values of{' '}
+              <Latex expression="x" /> greater than <Latex expression="-5" />
+            </Text>
+          </RSLApplyTheIdea>
+        </RSLWorkedQuestionPart>
       </RSLWorkedQuestion>
     </RSLIdeaWorkedQuestions>
-
     <RSLIdeaSummary>
-      <Text>Summary of the idea</Text>
+      <Text>A parabola hase these key features:</Text>
+      <List type="bullet">
+        <ListItem>
+          {' '}
+          Maximum and minimum values
+          <Text>
+            {' '}
+            The maximum or minimum value, also known as the turning point, is
+            found at the vertex of the parabola.
+          </Text>
+        </ListItem>
+        <ListItem>
+          {' '}
+          <Latex expression="y=-x^2" /> is a reflection of{' '}
+          <Latex expression="y=x^2" /> across the x-axis
+        </ListItem>
+        <ListItem>
+          {' '}
+          Graphs with a positive coefficient of <Latex expression="x" /> are
+          concave up
+        </ListItem>
+        <ListItem>
+          {' '}
+          Graphs with a positive coefficient of <Latex expression="x" /> are
+          concave down
+        </ListItem>
+        <ListItem>
+          Intercepts
+          <Text>
+            The <Latex expression="x" />
+            -intercepts are where the parabola crosses the{' '}
+            <Latex expression="x" />
+            -axis. This occurs when <Latex expression="y=0" />. The{' '}
+            <Latex expression="y" />
+            -intercept is where the parabola crosses the{' '}
+            <Latex expression="y" />
+            -axis This occurs when <Latex expression="x=0" />.
+          </Text>
+        </ListItem>
+        <ListItem>
+          Axis of Symmetry
+          <Text>
+            For a quadtric in general form, <Latex expression="y=ax^2+bx+c" />,
+            the axis of symmetry is at{' '}
+          </Text>
+          <Text>
+            <Latex expression="x =-b\\ {2}{a}" />.
+          </Text>
+        </ListItem>
+      </List>
     </RSLIdeaSummary>
   </RSLIdeaSection>
-
-  <RSLIdeaSection title="Idea title" id="unique-id-for-idea">
+  <RSLIdeaSection title="Graph of quadratics using technology" id="idea">
     <RSLIdeaTheory>
-      <Text>Introduce the idea</Text>
+      <Text>
+        Technology can be used to graph and identify key features of a quadratic
+        function. To determine an appropriate view window, we may need to use
+        our knowledge of the graph or calculate the location of some key
+        features.
+      </Text>
     </RSLIdeaTheory>
-
     <RSLIdeaWorkedQuestions>
       <RSLWorkedQuestion>
         <RSLQuestionStatement>
-          <Text>State the question</Text>
+          <Text>
+            Consider the equation <Latex expression="y=-5x^2 -80x-195" />
+          </Text>
         </RSLQuestionStatement>
-        <RSLCreateAStrategy>
-          <Text>Text</Text>
-        </RSLCreateAStrategy>
-        <RSLApplyTheIdea>
-          <Text>Text</Text>
-        </RSLApplyTheIdea>
-        <RSLReflectAndCheck>
-          <Text>Text</Text>
-        </RSLReflectAndCheck>
+        <RSLWorkedQuestionPart>
+          <RSLSubquestionStatement>
+            <Text>
+              State the coordinates of <Latex expression="y" />
+              -intercepts.
+            </Text>
+          </RSLSubquestionStatement>
+          <RSLCreateAStrategy>
+            <Text>
+              Let <Latex expression="x=0" /> and determine{' '}
+              <Latex expression="y" />.
+            </Text>
+          </RSLCreateAStrategy>
+          <RSLApplyTheIdea>
+            <AlgebraicWorking>
+              <AlgebraicWorkingRow>
+                <AlgebraicWorkingStatement
+                  lhs="y"
+                  relation="="
+                  rhs="-5(0)2-80(0)-195"
+                />
+                <AlgebraicWorkingExplanation>
+                  Substitute <Latex expression="x=0" /> into the equation
+                </AlgebraicWorkingExplanation>
+              </AlgebraicWorkingRow>
+              <AlgebraicWorkingRow>
+                <AlgebraicWorkingStatement relation="=" rhs="-195" />
+                <AlgebraicWorkingExplanation>
+                  Evaluate
+                </AlgebraicWorkingExplanation>
+              </AlgebraicWorkingRow>
+            </AlgebraicWorking>
+            <Text>
+              The <Latex expression="y" />
+              -intercepts is <Latex expression="(0,-195)" />.
+            </Text>
+          </RSLApplyTheIdea>
+        </RSLWorkedQuestionPart>
+        <RSLWorkedQuestionPart>
+          <RSLSubquestionStatement>
+            <Text>State the coordinates of the turning point.</Text>
+          </RSLSubquestionStatement>
+          <RSLCreateAStrategy>
+            <Text>Text</Text>
+          </RSLCreateAStrategy>
+          <RSLApplyTheIdea>
+            <Text>Text</Text>
+          </RSLApplyTheIdea>
+          <RSLReflectAndCheck>
+            <Text>Text</Text>
+          </RSLReflectAndCheck>
+        </RSLWorkedQuestionPart>
+        <RSLWorkedQuestionPart>
+          <RSLSubquestionStatement>
+            <Text>State the subquestion</Text>
+          </RSLSubquestionStatement>
+          <RSLCreateAStrategy>
+            <Text>Text</Text>
+          </RSLCreateAStrategy>
+          <RSLApplyTheIdea>
+            <Text>Text</Text>
+          </RSLApplyTheIdea>
+          <RSLReflectAndCheck>
+            <Text>Text</Text>
+          </RSLReflectAndCheck>
+        </RSLWorkedQuestionPart>
+        <RSLWorkedQuestionPart>
+          <RSLSubquestionStatement>
+            <Text>State the subquestion</Text>
+          </RSLSubquestionStatement>
+          <RSLCreateAStrategy>
+            <Text>Text</Text>
+          </RSLCreateAStrategy>
+          <RSLApplyTheIdea>
+            <Text>Text</Text>
+          </RSLApplyTheIdea>
+          <RSLReflectAndCheck>
+            <Text>Text</Text>
+          </RSLReflectAndCheck>
+        </RSLWorkedQuestionPart>
+        <RSLWorkedQuestionPart>
+          <RSLSubquestionStatement>
+            <Text>State the subquestion</Text>
+          </RSLSubquestionStatement>
+          <RSLCreateAStrategy>
+            <Text>Text</Text>
+          </RSLCreateAStrategy>
+          <RSLApplyTheIdea>
+            <Text>Text</Text>
+          </RSLApplyTheIdea>
+          <RSLReflectAndCheck>
+            <Text>Text</Text>
+          </RSLReflectAndCheck>
+        </RSLWorkedQuestionPart>
       </RSLWorkedQuestion>
     </RSLIdeaWorkedQuestions>
 
