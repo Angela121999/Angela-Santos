@@ -1,0 +1,26 @@
+<Worksheet paperSize="A4" language="English" version="2.27.0">
+  <QuestionsGroup title="Simple Familiar">
+    <Question label="1">
+      Select the correct words to make these statements true:
+       <Parts columns={1}>
+        <Part>
+          <Text>The graph of <Latex expression="y=x^2" /> has a concave (up/down) shape. It has a (maximum/minimum) turning point.</Text>
+        </Part>
+        <Part>
+          <Text>The graph of <Latex expression="y=-x^2" /> has a concave (up/down) shape. It has a (maximum/minimum) turning point.</Text>
+        </Part>
+      </Parts>
+    </Question>
+    <Question label="1">
+      Consider the general quadratic equation <Latex expression="y=ax^2+bx+c" />, <Latex expression="" /> will the parabola be:
+       <Parts columns={1}>
+        <Part>
+          <Text>The graph of <Latex expression="y=x^2" /> has a concave (up/down) shape. It has a (maximum/minimum) turning point.</Text>
+        </Part>
+        <Part>
+          <Text>The graph of <Latex expression="y=-x^2" /> has a concave (up/down) shape. It has a (maximum/minimum) turning point.</Text>
+        </Part>
+      </Parts>
+    </Question>
+  </QuestionsGroup>
+</Worksheet>
