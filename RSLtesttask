@@ -3,7 +3,7 @@
     <RSLIdeaTheory>
       <Text>
         When a quadratic function is sketched on a Cartesian plane, it is called
-        a parabola.
+        a <RSLGlossaryTerm>parabola</RSLGlossaryTerm>.
       </Text>
       <Text>
         The most simple quadratic function is <Latex expression="y=x^2" />. The
@@ -64,7 +64,7 @@
         <Point x={4} y={16} />
       </CartesianPlane>
       <Text>
-        The point is called the turning point of the graph. In this case,
+        The point is called the <RSLGlossaryTerm>turning point</RSLGlossaryTerm> of the graph. In this case,
         turning point is also the <Latex expression="x" />
         -intercept and the <Latex expression="y" />
         -intercept of the graph.
@@ -78,13 +78,11 @@
         </ListItem>
         <ListItem>
           {' '}
-          Graphs with a positive coefficient of <Latex expression="x" /> are
-          concave up
+          Graphs with a positive coefficient of <Latex expression="x" /> are <RSLGlossaryTerm>concave up</RSLGlossaryTerm>.
         </ListItem>
         <ListItem>
           {' '}
-          Graphs with a positive coefficient of <Latex expression="x" /> are
-          concave down
+          Graphs with a positive coefficient of <Latex expression="x" /> are <RSLGlossaryTerm>concave down</RSLGlossaryTerm>.
         </ListItem>
       </List>
       <Text>
@@ -178,9 +176,9 @@
       </CartesianPlane>
       <Text>
         Turning points can show the minimum or maximum values, and are also
-        referred to as the vertex.
+        referred to as the <RSLGlossaryTerm>vertex</RSLGlossaryTerm>.
       </Text>
-      <Text>Parabolas that are concave up have a minimum value</Text>
+      <Text>Parabolas that are concave up have a <RSLGlossaryTerm>minimum</RSLGlossaryTerm> value</Text>
       <CartesianPlane
         width={260}
         height={260}
@@ -213,7 +211,7 @@
           labelLatex="\qquad \qquad \qquad \qquad \qquad \qquad Minimum Value"
         />
       </CartesianPlane>
-      <Text>Parabolas that are concave up have a maximum value</Text>
+      <Text>Parabolas that are concave up have a <RSLGlossaryTerm>maximum </RSLGlossaryTerm>value</Text>
       <CartesianPlane
         width={260}
         height={260}
@@ -247,7 +245,7 @@
         />
       </CartesianPlane>
       <Text>
-        Maximum and minimum values occur on a parabola's axis of symmetry. This
+        Maximum and minimum values occur on a parabola's <RSLGlossaryTerm>axis of symmetry</RSLGlossaryTerm>. This
         is the vertical line that evenly divides a parabola into two halves. A
         quadratic in the general form <Latex expression="y=ax^2+bx+c" /> will
         have the axis of symmetry at:
@@ -791,27 +789,25 @@
       <List type="bullet">
         <ListItem>
           {' '}
-          Maximum and minimum values
+          <RSLGlossaryTerm>Maximum</RSLGlossaryTerm> and <RSLGlossaryTerm>minimum </RSLGlossaryTerm>values
           <Text>
             {' '}
-            The maximum or minimum value, also known as the turning point, is
-            found at the vertex of the parabola.
+            The maximum or minimum value, also known as the <RSLGlossaryTerm>turning point</RSLGlossaryTerm>, is
+            found at the <RSLGlossaryTerm>vertex</RSLGlossaryTerm> of the parabola.
           </Text>
         </ListItem>
         <ListItem>
           {' '}
           <Latex expression="y=-x^2" /> is a reflection of{' '}
-          <Latex expression="y=x^2" /> across the x-axis
+          <Latex expression="y=x^2" /> across the x-axis.
         </ListItem>
         <ListItem>
           {' '}
-          Graphs with a positive coefficient of <Latex expression="x" /> are
-          concave up
+          Graphs with a positive coefficient of <Latex expression="x" /> are <RSLGlossaryTerm>concave up</RSLGlossaryTerm>.
         </ListItem>
         <ListItem>
           {' '}
-          Graphs with a positive coefficient of <Latex expression="x" /> are
-          concave down
+          Graphs with a positive coefficient of <Latex expression="x" /> are <RSLGlossaryTerm>concave down</RSLGlossaryTerm>.
         </ListItem>
         <ListItem>
           Intercepts
@@ -830,7 +826,7 @@
           Axis of Symmetry
           <Text>
             For a quadtric in general form, <Latex expression="y=ax^2+bx+c" />,
-            the axis of symmetry is at{' '}
+            the <RSLGlossaryTerm>axis of symmetry</RSLGlossaryTerm> is at{' '}
           </Text>
           <Text>
             <Latex expression="x =\dfrac{-b}{2a}" />.
