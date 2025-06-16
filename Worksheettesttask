@@ -1,6 +1,6 @@
 <Worksheet paperSize="A4" language="English" version="2.27.0">
   <QuestionsGroup title="Simple Familiar">
-    <Question label="1">
+    <Question label="1" calculatorProhibited>
       Select the correct words to make these statements true:
        <Parts columns={1}>
         <Part>
@@ -11,16 +11,217 @@
         </Part>
       </Parts>
     </Question>
-    <Question label="1">
-      Consider the general quadratic equation <Latex expression="y=ax^2+bx+c" />, <Latex expression="" /> will the parabola be:
+    <Question label="2"calculatorProhibited>
+      Consider the general quadratic equation <Latex expression="y=ax^2+bx+c" />, <Latex expression="a \neq 0" /> will the parabola be:
        <Parts columns={1}>
         <Part>
-          <Text>The graph of <Latex expression="y=x^2" /> has a concave (up/down) shape. It has a (maximum/minimum) turning point.</Text>
+          <Text>Concave up or concave down when <Latex expression="a < 0?" /></Text>
         </Part>
         <Part>
-          <Text>The graph of <Latex expression="y=-x^2" /> has a concave (up/down) shape. It has a (maximum/minimum) turning point.</Text>
+          <Text>Concave up or concave down when <Latex expression="a > 0?" /></Text>
         </Part>
       </Parts>
     </Question>
+     <Question label="3" calculatorProhibited>
+      Consider the general quadratic equation <Latex expression="y=ax^2+bx+c" />, <Latex expression="" /> will the parabola be:
+       <Parts columns={2}>
+        <Part>
+          <Text><Latex expression="y=x^2-8x+9" /></Text>
+        </Part>
+        <Part>
+          <Text><Latex expression="y=6x-5x^2" /></Text>
+        </Part>
+        <Part>
+          <Text><Latex expression="y=(-x+1)(x-2)" /></Text>
+        </Part>
+      </Parts>
+    </Question>
+      <Question label="4" linkedExamples={['1']} calculatorProhibited>
+      <Text>Consider the given graph:</Text>
+      <TwoColumn>
+        <Column>
+       <Parts columns={1}>
+        <Part>
+          <Text>Identify <Latex expression="x" />-intercepts.</Text>
+        </Part>
+        <Part>
+          <Text>Identify <Latex expression="y" />-intercepts.</Text>
+        </Part>
+         <Part>
+          <Text>What is the maximum value?</Text>
+        </Part>
+        <Part>
+          <Text>For what values of <Latex expression="x" /> does the graph have a positive gradient?</Text>
+        </Part>
+      </Parts>
+      </Column>
+      <Column>
+      <CartesianPlane
+            width={260}
+            height={260}
+            xAxis={{
+              min: -5,
+              max: 6,
+              scale: 1,
+              interval: 1,
+              intervalSubdivisions: 2,
+              unit: '',
+              numberFormat: 'improperFraction',
+              label: 'x',
+            }}
+            yAxis={{
+              min: -10,
+              max: 6,
+              scale: 1,
+              interval: 2,
+              intervalSubdivisions: 1,
+              unit: '',
+              numberFormat: 'decimal',
+              label: 'y',
+            }}
+          >
+            <FunctionPlot f={(x) => 4 - (x - 2) ** 2} />
+          </CartesianPlane>
+    </Column>
+  </TwoColumn>
+    </Question>
+    <Question label="5"linkedExamples={['2']}calculatorProhibited>
+      <Text>Consider the given graph:</Text>
+      <TwoColumn>
+       <Column>
+       <Parts columns={1}>
+        <Part>
+          <Text>Is the curve concave up or concave down?</Text>
+        </Part>
+        <Part>
+          <Text>State the <Latex expression="y" />-intercept of the graph.</Text>
+        </Part>
+         <Part>
+          <Text>What is the minimum value?</Text>
+        </Part>
+        <Part>
+          <Text>At which value of <Latex expression="x" />  does the minimum value occur?</Text>
+        </Part>
+        <Part>
+          <Text>Determine the interval of <Latex expression="x" /> for which the graph is decreasing.</Text>
+        </Part>
+        </Parts>
+        </Column>
+        <Column>
+      <CartesianPlane
+            width={260}
+            height={260}
+            xAxis={{
+              min: -6,
+              max: 2,
+              scale: 1,
+              interval: 1,
+              intervalSubdivisions: 1,
+              unit: '',
+              numberFormat: 'improperFraction',
+              label: 'x',
+            }}
+            yAxis={{
+              min: -2,
+              max: 11,
+              scale: 1,
+              interval: 1,
+              intervalSubdivisions: 1,
+              unit: '',
+              numberFormat: 'decimal',
+              label: 'y',
+            }}
+          >
+            <FunctionPlot f={(x) => (x + 2) ** 2 - 2.3}  />
+          </CartesianPlane>
+    </Column>
+  </TwoColumn>
+    </Question>
+    <Question label="6" calculatorProhibited>
+      <Text>Consider the graph of the parabola:</Text>
+      <TwoColumn>
+      <Column>
+       <Parts columns={1}>
+        <Part>
+          <Text>State the coordinates of the <Latex expression="x" />-intercept.</Text>
+        </Part>
+        <Part>
+          <Text>State the coordinates of the vertex.</Text>
+        </Part>
+        <Part>
+          <Text>Determine whether these statements are true about the vertex:</Text>
+          <Parts columns={1}>
+            <Part label="i">
+              <Text>The vertex is the minimum value of the graph.</Text>
+            </Part>
+            <Part label="ii">
+              <Text>The vertex occurs at the <Latex expression="x" />-intercept.</Text>
+            </Part>
+            <Part label="iii">
+              <Text>The vertex lies on the axis of symmetry.</Text>
+            </Part>
+            <Part label="iv">
+              <Text>The vertex is the maximum value of the graph.</Text>
+            </Part>
+          </Parts>
+        </Part>
+      </Parts>
+       </Column>
+      <Column>
+      <CartesianPlane
+            width={260}
+            height={260}
+            xAxis={{
+              min: -6,
+              max: 4,
+              scale: 1,
+              interval: 1,
+              intervalSubdivisions: 2,
+              unit: '',
+              numberFormat: 'improperFraction',
+              label: 'x',
+            }}
+            yAxis={{
+              min: -14,
+              max: 3,
+              scale: 1,
+              interval: 2,
+              intervalSubdivisions: 1,
+              unit: '',
+              numberFormat: 'decimal',
+              label: 'y',
+            }}
+          >
+            <FunctionPlot f={(x) => 0.01 - (x + 2) ** 2} />
+          </CartesianPlane>
+    </Column>
+  </TwoColumn>
+    </Question>
+    <Question label="7" calculatorProhibited>
+  <Text>Consider the quadratic function defined in the table:</Text>
+  <TwoColumn>
+    <Column>
+      <Parts columns={1}>
+        <Part>
+          <Text>What are the coordinates of the vertex?</Text>
+        </Part>
+        <Part>
+          <Text>What is the minimum value of the function?</Text>
+        </Part>
+      </Parts>
+    </Column>
+    <Column>
+       <TabularData
+        rowTitles={['x', 'y']}
+        rowTitlesAs="latex"
+        rowData={[
+          ['-7', '-6', '-5', '-4', '-3', '-2', '-1'],
+          ['11', '6', '3', '2', '3', '6', '11'],
+        ]}
+        rowDataAs="latex"
+      />
+    </Column>
+  </TwoColumn>
+</Question>
   </QuestionsGroup>
 </Worksheet>
