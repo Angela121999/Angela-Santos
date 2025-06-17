@@ -178,7 +178,7 @@
         Turning points can show the minimum or maximum values, and are also
         referred to as the <RSLGlossaryTerm>vertex</RSLGlossaryTerm>.
       </Text>
-      <Text>Parabolas that are concave up have a <RSLGlossaryTerm>minimum</RSLGlossaryTerm> value</Text>
+      <RSLAnnotatedFigure>
       <CartesianPlane
         width={260}
         height={260}
@@ -207,11 +207,17 @@
         <Point x={10} y={-15} color="lochmara" />
         <FunctionPlot
           f={(x) => -17}
-          domain={[-28, -28]}
-          labelLatex="\qquad \qquad \qquad \qquad \qquad \qquad Minimum Value"
+          domain={[-27, -27]}
+          labelLatex="\qquad \qquad \qquad \qquad \qquad \enspace \text{Minimum Value}"
         />
       </CartesianPlane>
-      <Text>Parabolas that are concave up have a <RSLGlossaryTerm>maximum </RSLGlossaryTerm>value</Text>
+       <RSLFigureAnnotation>
+          <Text>
+            Parabolas that are concave up have a <RSLGlossaryTerm>minimum</RSLGlossaryTerm> value.
+          </Text>
+        </RSLFigureAnnotation>
+      </RSLAnnotatedFigure>
+      <RSLAnnotatedFigure>
       <CartesianPlane
         width={260}
         height={260}
@@ -241,16 +247,22 @@
         <FunctionPlot
           f={(x) => 17}
           domain={[-28, -28]}
-          labelLatex="\qquad Maximum Value"
+          labelLatex="\qquad \enspace \text{Maximum Value}"
         />
       </CartesianPlane>
+      <RSLFigureAnnotation>
+          <Text>
+            Parabolas that are concave down have a <RSLGlossaryTerm>maximum</RSLGlossaryTerm> value.
+          </Text>
+        </RSLFigureAnnotation>
+      </RSLAnnotatedFigure>
       <Text>
         Maximum and minimum values occur on a parabola's <RSLGlossaryTerm>axis of symmetry</RSLGlossaryTerm>. This
         is the vertical line that evenly divides a parabola into two halves. A
         quadratic in the general form <Latex expression="y=ax^2+bx+c" /> will
         have the axis of symmetry at:
       </Text>
-      <AlgebraicWorking useRowNumbering>
+      <AlgebraicWorking>
         <AlgebraicWorkingRow>
           <AlgebraicWorkingStatement
             lhs="x"
@@ -273,7 +285,7 @@
               max: 8,
               scale: 1,
               interval: 2,
-              intervalSubdivisions: 1,
+              intervalSubdivisions: 2,
               unit: '',
               numberFormat: 'improperFraction',
               label: 'x',
@@ -283,7 +295,7 @@
               max: 10,
               scale: 1,
               interval: 5,
-              intervalSubdivisions: 1,
+              intervalSubdivisions: 4,
               unit: '',
               numberFormat: 'decimal',
               label: 'y',
@@ -318,7 +330,7 @@
                 max: 8,
                 scale: 1,
                 interval: 2,
-                intervalSubdivisions: 1,
+                intervalSubdivisions: 2,
                 unit: '',
                 numberFormat: 'improperFraction',
                 label: 'x',
@@ -328,7 +340,7 @@
                 max: 10,
                 scale: 1,
                 interval: 5,
-                intervalSubdivisions: 1,
+                intervalSubdivisions: 4,
                 unit: '',
                 numberFormat: 'decimal',
                 label: 'y',
@@ -381,7 +393,7 @@
                 max: 8,
                 scale: 1,
                 interval: 2,
-                intervalSubdivisions: 1,
+                intervalSubdivisions: 2,
                 unit: '',
                 numberFormat: 'improperFraction',
                 label: 'x',
@@ -391,7 +403,7 @@
                 max: 10,
                 scale: 1,
                 interval: 5,
-                intervalSubdivisions: 1,
+                intervalSubdivisions: 4,
                 unit: '',
                 numberFormat: 'decimal',
                 label: 'y',
@@ -434,7 +446,7 @@
                 max: 8,
                 scale: 1,
                 interval: 2,
-                intervalSubdivisions: 1,
+                intervalSubdivisions: 2,
                 unit: '',
                 numberFormat: 'improperFraction',
                 label: 'x',
@@ -444,7 +456,7 @@
                 max: 10,
                 scale: 1,
                 interval: 5,
-                intervalSubdivisions: 1,
+                intervalSubdivisions: 4,
                 unit: '',
                 numberFormat: 'decimal',
                 label: 'y',
@@ -751,7 +763,7 @@
                 max: 8,
                 scale: 1,
                 interval: 2,
-                intervalSubdivisions: 1,
+                intervalSubdivisions: 2,
                 unit: '',
                 numberFormat: 'improperFraction',
                 label: 'x',
@@ -761,7 +773,7 @@
                 max: 10,
                 scale: 1,
                 interval: 5,
-                intervalSubdivisions: 1,
+                intervalSubdivisions: 4,
                 unit: '',
                 numberFormat: 'decimal',
                 label: 'y',
